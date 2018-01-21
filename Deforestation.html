@@ -89,7 +89,7 @@ $( function() {
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
-    <a href="https://www.redcross.org/donate/donation"><img src="./fire.png" width="100" height="100"><h5>Information</h5></a>
+    <a href="https://www.worldwildlife.org/threats/deforestation"><img src="./stump.png" width="100" height="100"><h5>Information</h5></a>
     <a href="file:///Users/ruchisheth/Desktop/main.html">Main Page</a>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <h1> Natural Disasters </h1>
@@ -111,7 +111,7 @@ $( function() {
   </div>
   <div id="map">
     <!--<img id="draggable" src="./volcano.png" width="100" height="100" ui-widget-content> <!-- volcano-->
-    <!--<img id="draggable" src="./tornado.png" width="100" height="100" ui-widget-content>-->
+    <!--<img id="draggable" src="./stump.png" width="100" height="100" ui-widget-content>-->
   </div>
   <div class="back"></div>
   <script>
@@ -128,70 +128,54 @@ $( function() {
       center: {lat: -33.865427, lng: 151.196123},
       mapTypeId: 'terrain'
     });
-    var image = './fire.png';
+    var image = './stump.png';
     var beachMarker = new google.maps.Marker({
-      position: {lat: -33.890, lng: 151.274},
+      position: {lat: 21.7679, lng: 78.8718}, //India
       map: map,
       height: 100,
       width:100,
-      url: "https://www.redcross.org/donate/donation",
       icon: image,
     });
-    google.maps.event.addListener(beachMarker, "click", function() {
-    window.open(this.url, "_blank");
-    });
-
-    var image = './fire.png';
+    var image1 = './stump.png';
     var beachMarker = new google.maps.Marker({
-      position: {lat: 24.890, lng: 135.274},
+      position: {lat: 6.465422, lng: 3.406448}, //Indonesia and Papua New Guinea
       map: map,
       height: 100,
       width:100,
-      url: "https://www.redcross.org/donate/donation",
-      icon: image,
+      icon: image1,
     });
-    google.maps.event.addListener(beachMarker, "click", function() {
-    window.open(this.url, "_blank");
-    });
-
-    var image = './fire.png';
+    var image2 = './stump.png';
     var beachMarker = new google.maps.Marker({
-      position: {lat: -42.890, lng: 181.274},
+      position: {lat: -2.163106, lng: -55.126648}, //Right of Indonesia
       map: map,
       height: 100,
       width:100,
-      url: "https://www.redcross.org/donate/donation",
-      icon: image,
+      icon: image2,
     });
-    google.maps.event.addListener(beachMarker, "click", function() {
-window.open(this.url, "_blank");
-});
-
-    var image = './fire.png';
+    var image3 = './stump.png';
     var beachMarker = new google.maps.Marker({
-      position: {lat: -29.890, lng: 167.274},
+      position: {lat: -8.409518, lng: 115.188919}, //Top of Indonesia
       map: map,
       height: 100,
       width:100,
-      url: "https://www.redcross.org/donate/donation",
-      icon: image,
+      icon: image3,
     });
-    google.maps.event.addListener(beachMarker, "click", function() {
-window.open(this.url, "_blank");
-});
-
-    var image = './fire.png';
+    var image4 = './stump.png';
     var beachMarker = new google.maps.Marker({
-      position: {lat: 20.890, lng: 235.274},
+      position: {lat: 15.770288, lng: -86.791901}, //Top of Indonesia
       map: map,
       height: 100,
       width:100,
-      url: "https://www.redcross.org/donate/donation",
-      icon: image,
+      icon: image4,
     });
-    google.maps.event.addListener(beachMarker, "click", function() {
-window.open(this.url, "_blank");
-});
+    var image5 = './stump.png';
+    var beachMarker = new google.maps.Marker({
+      position: {lat: 5, lng: 125.274}, //Top of Indonesia
+      map: map,
+      height: 100,
+      width:100,
+      icon: image5,
+    });
 
     var script = document.createElement('script');
     script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
@@ -213,7 +197,6 @@ window.open(this.url, "_blank");
       strokeWeight: .5
     };
   }
-
   function eqfeed_callback(results) {
     map.data.addGeoJson(results);
   }
@@ -237,7 +220,6 @@ window.open(this.url, "_blank");
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9AUvQIaqFT2N7YNYlKxcLIVa7kgFxJvI&callback=initMap">
   </script>
   <script>
-
 </script>
 </body>
 </html>
